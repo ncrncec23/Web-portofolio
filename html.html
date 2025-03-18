@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-btn {
+            background-color: #444;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            position: absolute;
+            background-color: white;
+            min-width: 150px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            overflow: hidden;
+
+            max-height: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out, visibility 0.4s;
+        }
+
+        .dropdown:hover .dropdown-content {
+            max-height: 200px;
+            /* Dovoljno da sve stane */
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dropdown">
+        <button class="dropdown-btn">Meni</button>
+        <div class="dropdown-content">
+            <a href="#">Opcija 1</a>
+            <a href="#">Opcija 2</a>
+            <a href="#">Opcija 3</a>
+        </div>
+    </div>
+    <script>
+        const button = document.getElementById("button");
+        button.onclick = () => {
+            if (button.classList.contains("inside_click")) {
+                button.classList.remove("inside_click");
+                button.classList.add("reverse_inside_click");
+            } else {
+                button.classList.remove("reverse_inside_click");
+                button.classList.add("inside_click");
+            }
+        }
+        const hamburger = document.querySelector(".HamburgerContainer");
+        let open = false;
+        hamburger.onclick = () => {
+            const prvaLinija = document.querySelector(".firstLineHam");
+            const trecaLinija = document.querySelector(".thirdLineHam");
+            const drugaLinija = document.querySelector(".secondLineHam");
+            if (!open) {
+                prvaLinija.classList.remove("klikPrvaReverse");
+                trecaLinija.classList.remove("klikTrecaReverse");
+                drugaLinija.classList.remove("transparityReverse");
+                prvaLinija.classList.add("klikPrva");
+                trecaLinija.classList.add("klikTreca");
+                drugaLinija.classList.add("transparity");
+            } else {
+                prvaLinija.classList.remove("klikPrva");
+                trecaLinija.classList.remove("klikTreca");
+                drugaLinija.classList.remove("transparity");
+                prvaLinija.classList.add("klikPrvaReverse");
+                trecaLinija.classList.add("klikTrecaReverse");
+                drugaLinija.classList.add("transparityReverse");
+            }
+            open = !open
+        }
+    </script>
+</body>
+
+</html>

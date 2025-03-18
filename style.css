@@ -1,0 +1,3815 @@
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes move {
+    0% {
+        left: -100%;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+body {
+
+    margin: 0;
+}
+
+header {
+    background-color: #213555;
+    color: #e5d5ca;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.goldCrncec {
+    color: #F7CC74;
+}
+
+.heroSection {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    width: 100%;
+    max-width: 1536px;
+    position: relative;
+    z-index: 1;
+}
+
+.montserrat-h1 {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2.9rem;
+    color: #FFFFFF;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.montserrat-h2 {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.6rem;
+    color: #F7CC74;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 2.5px;
+}
+
+.lato-bold {
+    font-family: "Figtree", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1rem;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 1px;
+}
+
+.lato-bold>a {
+    font-family: "Figtree", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1rem;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    text-decoration: none;
+    color: #D8C4B6;
+}
+
+.lato-bold-p {
+    font-family: "Figtree", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.3rem;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #F7CC74;
+}
+
+.lato-regular {
+    font-family: "Figtree", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.3rem;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 2px;
+}
+
+.p-description {
+    width: 35rem;
+}
+
+.desc {
+    position: relative;
+    align-self: center;
+    justify-self: right;
+    margin-bottom: 2rem;
+    background-color: #00000052;
+    padding: 2rem;
+    border-radius: 1rem;
+    animation: move 1s ease-in-out;
+}
+
+.NikoCrncec {
+    height: 560px;
+    justify-self: left;
+    margin-left: 7rem;
+    margin-top: 1.5rem;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 2rem;
+    grid-column: span 2;
+}
+
+.links>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.settings {
+    margin-left: 4rem;
+}
+
+.learnMore {
+    position: relative;
+    display: inline-block;
+    border: 0;
+    background-color: #F7CC74;
+    color: #213555;
+    font-family: "Figtree", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    border-radius: 0.3rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    transition: color 0.5s;
+    letter-spacing: 0.5px;
+}
+
+.learnMore::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #00A8E8;
+    transition: left 0.5s;
+    z-index: 0;
+}
+
+.learnMore:hover::before {
+    left: 0;
+}
+
+.learnMore:hover {
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.learnMore span {
+    position: relative;
+    z-index: 1;
+}
+
+.learnMore:active {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.learnMore:active::before {
+    background-color: #06749f;
+
+}
+
+.line {
+    width: 0%;
+    height: 0.3rem;
+    transition: width 0.3s ease-in-out;
+    background-color: #D8C4B6;
+    margin-top: 1rem;
+}
+
+.lato-bold>a:hover+.line {
+    width: 100%;
+}
+
+.Logo {
+    margin-bottom: 1.5rem;
+}
+
+.svg1 {
+    margin-bottom: 1.2rem;
+    cursor: pointer;
+}
+
+.More span {
+    font-family: "Figtree", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.FeaturesSection {
+    background-color: #F5EFE7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.FeatureParagraph {
+    font-family: "Figtree", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.95rem;
+    color: #213555;
+    width: 22rem;
+    margin: 0;
+}
+
+.FeatureTitle {
+    position: relative;
+    z-index: 1;
+    font-family: "Montserrat", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.4rem;
+    color: #213555;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    letter-spacing: 2.5px;
+}
+
+.ReadMore {
+    position: relative;
+    text-decoration: none;
+    color: #00A8E8;
+    font-family: "Figtree", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    width: 45%;
+}
+
+.stabljika {
+    position: relative;
+    width: 20px;
+    height: 2px;
+    background-color: #00A8E8;
+    left: 10px;
+    transition: width 0.3s ease;
+}
+
+.ReadMore svg,
+.stabljika {
+    margin-top: 3px;
+}
+
+.ReadMore svg {
+    position: relative;
+    right: 0.5rem;
+}
+
+.readMoreText {
+    margin: 0;
+}
+
+.readMoreText:hover+.stabljika {
+    width: 35px;
+}
+
+#canvas {
+    position: absolute;
+    z-index: -2;
+    top: 2%;
+    right: 50%;
+}
+
+#canvas1 {
+    position: absolute;
+    z-index: -1;
+    top: -35%;
+    right: -20%;
+}
+
+
+.TitlePreview h2 {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 2.5rem;
+    color: #D8C4B6;
+    margin: 20px 0px;
+}
+
+.AboutMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    padding: 7rem 0rem;
+    background-color: #F5EFE7;
+}
+
+.crticeAboutMe {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.left {
+    width: 35rem;
+}
+
+.roboto-p {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 0.4rem;
+    color: #00A8E8;
+    font-size: 1rem;
+}
+
+.left h2 {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3.5rem;
+    color: #213555;
+    margin: 20px 0px;
+}
+
+.textMe {
+    font-family: "Figtree", serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+    font-size: 1.2rem;
+
+    color: #213555;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.right img {
+    width: 400px;
+    height: 500px;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Footer {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 600;
+    font-style: normal;
+    background-color: #213555;
+    color: #D8C4B6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 2rem 0rem;
+    letter-spacing: 1.5px;
+    font-size: 0.7rem;
+}
+
+.Footer a {
+    color: #D8C4B6;
+    text-decoration: none;
+}
+
+.Footer h1.montserrat-h1 {
+    font-size: 1.5rem;
+}
+
+.info {
+    margin-top: 10px;
+    width: 276.83px;
+}
+
+.websites {
+    height: 145px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.socialMedia {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 0.85rem;
+    column-gap: 2rem;
+    width: 490px;
+}
+
+.Contact {
+    grid-column: span 2;
+    text-align: center;
+}
+
+.socialFlex {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.socialFlex a {
+    font-size: 0.7rem;
+}
+
+#mail a {
+    width: 200px;
+    word-wrap: break-word;
+}
+
+#github {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.socialFlex:hover .shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+.socialFlex a:hover {
+    color: #F7CC74;
+}
+
+.gold:hover {
+    color: #F7CC74;
+}
+
+@keyframes shrink {
+    0% {
+        height: 50px;
+    }
+
+    100% {
+        height: 0px;
+    }
+}
+
+.dropdownSettings {
+    background-color: #3E5879;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+
+.settingsText {
+    font-family: "Figtree", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    display: none;
+    margin: 0;
+    color: #D8C4B6;
+}
+
+.settingsText:hover {
+    color: #00A8E8;
+}
+
+.settingsContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+@keyframes expand {
+    0% {
+        height: 0px;
+    }
+
+    100% {
+        height: 50px;
+    }
+}
+
+.show {
+    animation: expand 1s ease-in-out forwards;
+}
+
+.unshow {
+    animation: shrink 1s ease-in-out forwards;
+}
+
+.settingsBut {
+    background-color: transparent;
+    border: 0;
+}
+
+.change {
+    fill: #c1aea0;
+}
+
+#svgSetts:hover {
+    fill: #e8d7cc;
+}
+
+.but {
+    border: 0;
+    background-color: transparent;
+    display: none;
+}
+
+.seperator {
+    width: 2px;
+    height: 24px;
+    background-color: #D8C4B6;
+    transform: rotate(15deg);
+    display: none;
+}
+
+.dijete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    animation: move 1s ease-in-out;
+}
+
+.dijete>a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #D8C4B6;
+}
+
+.dijete>a:hover {
+    color: #00A8E8;
+}
+
+.dijete>a:active {
+    color: #04658b;
+}
+
+.settingsText:active {
+    color: #04658b;
+}
+
+:root {
+    --primary_color: #213555;
+}
+
+@keyframes m {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: 60%;
+        background-color: #F7CC74;
+    }
+}
+
+@keyframes m2 {
+    0% {
+        left: 60%;
+        background-color: #F7CC74;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+.outside {
+    width: 50px;
+    height: 20px;
+    border-radius: 1rem;
+    background-color: var(--primary_color);
+    animation: move 1s ease-in-out;
+}
+
+.inside {
+    cursor: pointer;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: #00A8E8;
+    border-radius: 50%;
+}
+
+.inside_click {
+    animation: m 0.5s ease-in-out forwards;
+}
+
+.reverse_inside_click {
+    animation: m2 0.5s ease-in-out forwards;
+}
+
+.pID {
+    margin: 0;
+    margin-right: 40px;
+    animation: move 1s ease-in-out;
+}
+
+.opala {
+    animation: move 1s ease-in-out;
+}
+
+.Logo {
+    margin-bottom: 10px;
+}
+
+.ProjectsPreview {
+    background-color: #213555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Applications {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.Applications>img {
+    width: 37rem;
+    height: 20rem;
+}
+
+.opisProjekti {
+    color: #F5EFE7;
+    padding: 2.7rem;
+}
+
+.opisProjekti p {
+    width: 40rem;
+    text-align: justify;
+}
+
+.CenterProjects {
+    overflow: hidden;
+}
+
+#bottom {
+    position: relative;
+    left: -100%;
+    margin-bottom: 2rem;
+}
+
+#middle {
+    position: relative;
+    right: -100%;
+}
+
+@keyframes movingProject {
+    from {
+        left: -100%;
+        opacity: 0;
+    }
+
+    to {
+        left: 0%;
+        opacity: 1;
+    }
+}
+
+@keyframes movingProjectLeft {
+    from {
+        right: -100%;
+        opacity: 0;
+    }
+
+    to {
+        right: 0%;
+        opacity: 1;
+    }
+}
+
+
+#top {
+    position: relative;
+    left: -100%;
+    margin-top: 2rem;
+}
+
+.githubButton {
+    float: left;
+    display: flex;
+    border: 1px solid #F5EFE7;
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 5px 15px;
+    color: #F5EFE7;
+    gap: 5px;
+    margin-right: 20px;
+}
+
+@keyframes pojavise {
+    from {
+        background-color: transparent;
+    }
+
+    to {
+        background-color: #F5EFE7;
+        color: #213555;
+    }
+}
+
+@keyframes pojavise2 {
+    from {
+        fill: #F5EFE7;
+    }
+
+    to {
+        fill: #213555;
+    }
+}
+
+.githubButton:hover {
+    animation: pojavise 0.5s ease forwards;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.githubButton:hover svg>g>path[fill="#F5EFE7"] {
+    animation: pojavise2 0.5s ease forwards;
+}
+
+.githubButton p {
+    width: 5rem;
+    text-align: center;
+    margin: 0;
+}
+
+.MoveRight {
+    animation: movingProject 1s ease forwards;
+}
+
+.MoveLeftMiddle {
+    animation: movingProjectLeft 1s ease forwards;
+}
+
+@keyframes ide {
+    0% {
+        background-color: #F5EFE7;
+    }
+
+    100% {
+        background-color: #c1aea0;
+    }
+}
+
+.More {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    background-color: #F5EFE7;
+    border-radius: 8px;
+    padding: 8px 15px;
+    color: #213555;
+    overflow: hidden;
+    height: 36.6px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.More:hover {
+    animation: ide 0.7s ease forwards;
+}
+
+.mojaSlika {
+    display: none;
+}
+
+.sloziIh {
+    display: none;
+}
+
+.Naslov {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+
+.Opisaplikacije {
+    font-family: "Figtree", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.95rem;
+}
+
+.FeaturesSection {
+    overflow: hidden;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(50vh);
+    }
+
+    100% {
+        transform: translateY(0vh);
+    }
+}
+
+@keyframes mjenjanje {
+    0% {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    100% {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}
+
+.Work,
+.education,
+.Skills {
+    transform: translateY(50vh);
+}
+
+.goUp {
+    animation: moveUp 1s ease forwards;
+}
+
+.paddingChange {
+    animation: mjenjanje 1s ease forwards;
+}
+
+.code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3E5879;
+    padding: 5rem;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.shell {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    height: 29.9rem;
+    overflow: hidden;
+    background-color: #272822;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5%;
+}
+
+.programmingCode {
+    display: flex;
+}
+
+.topping {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: black;
+    height: 40px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.lines {
+    width: 40px;
+    height: 100%;
+    color: #969695;
+    padding: 1rem;
+}
+
+.lines>p {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.kod {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 16px;
+    overflow-x: scroll;
+}
+
+.kod::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #3b3c34;
+}
+
+.kod::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+}
+
+.kod::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #F92672;
+}
+
+.kod p {
+    height: 20.8px;
+    margin-top: 6px;
+}
+
+.konstante {
+    color: #AE81FF;
+}
+
+.normalno {
+    color: #F8F8F2;
+    white-space: nowrap;
+}
+
+.kljucnaRijec {
+    color: #F92672;
+    font-weight: 700;
+}
+
+.varijable {
+    color: #A6E22E;
+}
+
+.stringovi {
+    color: #E6DB74;
+}
+
+.pomeri {
+    margin-bottom: 0;
+    margin-left: 70px;
+}
+
+.pomaki {
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+
+#brmbrm {
+    margin-left: 20px;
+    margin-bottom: 20.8px;
+}
+
+#opaca {
+    margin-bottom: 20.8px;
+}
+
+#svoj {
+    margin: 0;
+}
+
+.metode {
+    color: #66D9EF;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #3b3c34;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #F7CC74;
+}
+
+.slozi {
+    margin: 0;
+    padding-left: 20px;
+    padding-top: 12px;
+    font-size: 0.8rem;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 60px;
+    margin: 0;
+    margin-right: 20px;
+    border: none;
+    font-weight: 800;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.kopiranje>svg {
+    cursor: pointer;
+}
+
+.kopiranje {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonsProgrammingLanguageChange {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.buttonsProgrammingLanguageChange>button {
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    background-color: #272822;
+}
+
+@keyframes trans {
+    from {}
+
+    to {
+        fill: #F8F8F2
+    }
+}
+
+.buttonsProgrammingLanguageChange>button:hover svg>path {
+    animation: trans 0.5s ease-in-out forwards;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.buttonsProgrammingLanguageChange>button>svg>path {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Objasnjenje {
+    font-family: "Figtree", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    padding: 40px;
+    color: #F8F8F2;
+}
+
+.Objasnjenje p {
+    width: 460px;
+    font-size: 1.1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    text-align: justify;
+    margin-top: 30px;
+}
+
+.Objasnjenje h2 {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3rem;
+    color: #F7CC74;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.yup {
+    font-style: italic;
+    color: #F5EFE7;
+    margin-bottom: 20px;
+}
+
+.mobilnaNav {
+    display: none;
+}
+
+@media only screen and (max-width: 1400px) {
+    .Objasnjenje {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+@media only screen and (max-width: 1285.60px) {
+    .Applications img {
+        width: 32rem;
+        height: 17rem;
+    }
+
+    .FeatureParagraph {
+        width: 20rem;
+        font-size: 0.8rem;
+    }
+
+    .FeatureTitle {
+        font-size: 1.2rem;
+    }
+
+    .FeaturesSection {
+        gap: 3rem;
+    }
+
+    .p-description {
+        width: 31rem;
+    }
+
+    .links>ul {
+        gap: 2.9rem;
+    }
+
+    .settings {
+        margin-left: 3rem;
+    }
+
+    .lato-bold {
+        letter-spacing: 0px;
+    }
+
+    .NikoCrncec {
+        justify-self: right;
+        margin-right: 20px;
+        margin-left: 0px;
+    }
+
+    .Objasnjenje p {
+        width: 40rem;
+        font-size: 1.3rem;
+    }
+
+    .Objasnjenje h2 {
+        font-size: 3.2rem;
+    }
+
+}
+
+@media only screen and (max-width: 1165px) {
+    .settingsText {
+        font-size: 0.9rem;
+    }
+
+    .dijete {
+        font-size: 0.9rem;
+    }
+
+    .seperator {
+        font-size: 0.9rem;
+    }
+
+    #canvas {
+        width: 800px;
+        height: 800px;
+    }
+
+    #canvas1 {
+        width: 800px;
+        height: 800px;
+    }
+
+    .textMe {
+        font-size: 1rem;
+    }
+
+    .left {
+        width: 25rem;
+    }
+
+    .left h2 {
+        font-size: 3rem;
+    }
+
+    #abtm {
+        font-size: 0.8rem;
+    }
+
+    .crticeAboutMe svg {
+        width: 12px;
+        height: 24px;
+    }
+
+    .AboutMe {
+        gap: 100px;
+    }
+
+    .yup {
+        width: 200px;
+    }
+
+    .info {
+        width: 200px;
+    }
+
+
+    .DevelopedbyNikoCrncec {
+        width: 200px;
+    }
+
+    .copyRight {
+        width: 200px;
+    }
+
+    .Footer {
+        gap: 40px;
+    }
+
+    .ReadMore {
+        width: 55%;
+    }
+
+    .Naslov {
+        font-size: 1.3rem;
+    }
+
+    #opis1,
+    #opis2,
+    #opis3 {
+        width: 27rem;
+        font-size: 0.8rem;
+    }
+
+    .Applications img {
+        width: 30rem;
+        height: 15rem;
+    }
+
+    .FeatureParagraph {
+        width: 18rem;
+    }
+
+    .FeatureTitle {
+        font-size: 1.3rem;
+    }
+
+    .FeaturesSection {
+        gap: 1rem;
+    }
+
+    .NikoCrncec {
+        height: 500px;
+        margin-top: 40px;
+    }
+
+    .p-description {
+        width: 29rem;
+    }
+
+    .desc {
+        margin: 0;
+    }
+
+    .links>ul {
+        gap: 2.5rem;
+    }
+
+    .montserrat-h1 {
+        font-size: 2.6rem;
+    }
+
+    .montserrat-h2 {
+        font-size: 1.4rem;
+    }
+
+    .lato-bold>a {
+        font-size: 0.9rem;
+    }
+
+    .svg1 {
+        width: 25px;
+        height: 25px;
+    }
+
+    .lato-regular {
+        font-size: 1.1rem;
+    }
+
+    .lato-bold-p {
+        font-size: 1.1rem;
+    }
+
+    .learnMore {
+        padding: 0.2rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1094px) {
+    .p-description {
+        width: 27rem;
+    }
+
+    .NikoCrncec {
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    #canvas1 {
+        width: 700px;
+        height: 700px;
+    }
+
+    #canvas {
+        top: 30px;
+        width: 700px;
+        height: 700px;
+    }
+
+    .NikoCrncec {
+        height: 400px;
+    }
+
+    .links>ul {
+        gap: 2.3rem;
+    }
+
+    .settings {
+        margin-left: 2rem;
+    }
+
+    .montserrat-h1 {
+        font-size: 2.6rem;
+    }
+}
+
+@media only screen and (max-width: 977px) {
+    .settingsText {
+        font-size: 0.8rem;
+    }
+
+    .dijete {
+        font-size: 0.8rem;
+    }
+
+    .seperator {
+        font-size: 0.8rem;
+    }
+
+    .lato-regular {
+        font-size: 1rem;
+    }
+
+    .montserrat-h2 {
+        font-size: 1.2rem;
+    }
+
+    .lato-bold-p {
+        font-size: 1rem;
+    }
+
+    .desc {
+        padding: 1.5rem;
+    }
+
+    .NikoCrncec {
+        height: 370px;
+    }
+
+    .p-description {
+        width: 24.5rem;
+    }
+
+    .links>ul {
+        gap: 2rem;
+    }
+
+    .settings {
+        margin-left: 1.7rem;
+    }
+
+    .lato-bold>a {
+        font-size: 0.8rem;
+    }
+
+    .svg1 {
+        width: 22px;
+        height: 22px;
+    }
+
+    .learnMore {
+        padding: 0.2rem;
+        padding-left: 1.3rem;
+        padding-right: 1.3rem;
+        font-size: 0.9rem;
+    }
+
+    .montserrat-h1 {
+        font-size: 2rem;
+    }
+
+    .FeaturesSection {
+        gap: 1.5rem;
+    }
+
+    .FeatureParagraph {
+        font-size: 0.7rem;
+        width: 14rem;
+    }
+
+    .FeatureTitle {
+        font-size: 1rem;
+    }
+
+    .svgIcons {
+        width: 35px;
+        height: 35px;
+    }
+
+    .readMoreText {
+        font-size: 0.7rem;
+    }
+
+    .ReadMore svg {
+        margin: 0;
+    }
+
+    .stabljika {
+        margin: 0;
+    }
+
+    .githubButton {
+        align-items: center;
+        padding: 3px 10px;
+    }
+
+    .githubButton svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .More {
+        height: 32.5px;
+    }
+
+    .Applications {
+        flex-direction: column;
+    }
+
+    #opis1,
+    #opis2,
+    #opis3 {
+        width: 30rem;
+    }
+
+    .opisProjekti {
+        order: 2;
+    }
+
+    .Applications img {
+        order: 1;
+    }
+
+    .AboutMe {
+        gap: 40px;
+    }
+
+    .AboutMe img {
+        width: 300px;
+        height: 400px;
+    }
+
+    .left {
+        width: 23rem;
+    }
+
+    .dropdownSettings {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .pID {
+        margin-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 893px) {
+    .lato-regular {
+        font-size: 1rem;
+    }
+
+    .montserrat-h2 {
+        font-size: 1.2rem;
+    }
+
+    .p-description {
+        width: 22.9rem;
+    }
+
+    .navBar {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+
+    .Footer {
+        font-size: 0.6rem;
+        gap: 1.5rem;
+    }
+
+    #mail a {
+        width: 9rem;
+    }
+
+    .socialFlex a {
+        font-size: 0.6rem;
+    }
+
+    .socialMedia {
+        width: 25rem;
+    }
+
+    @keyframes mjenjanje {
+        0% {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        100% {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+    }
+
+    .paddingChange {
+        animation: mjenjanje 1s ease forwards;
+    }
+}
+
+@media only screen and (max-width: 826px) {
+    .heroSection {
+        align-items: end;
+    }
+
+    #canvas1 {
+        width: 600px;
+        height: 600px;
+        z-index: -2;
+    }
+
+    #canvas {
+        top: 40px;
+        left: -130px;
+        width: 530px;
+        height: 530px;
+    }
+
+    .lato-bold-p {
+        font-size: 1rem;
+    }
+
+    .p-description {
+        width: 21rem;
+    }
+
+    .NikoCrncec {
+        height: 340px;
+    }
+
+    .buttonsProgrammingLanguageChange {
+        flex-direction: row;
+    }
+
+    .Objasnjenje {
+        padding: 0;
+    }
+
+    .Objasnjenje h2 {
+        font-size: 2.9rem;
+    }
+
+    .Objasnjenje p {
+        width: 30rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    @keyframes k {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(90deg);
+        }
+    }
+
+    @keyframes kr {
+        0% {
+            transform: rotate(90deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    .k {
+        animation: k 0.5s ease forwards;
+    }
+
+    .kr {
+        animation: kr 0.5s ease forwards;
+    }
+
+    #canvas1 {
+        width: 500px;
+        height: 500px;
+    }
+
+    #canvas {
+        top: 90px;
+        width: 500px;
+        height: 500px;
+    }
+
+    .desc {
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .Objasnjenje {
+        order: 1;
+    }
+
+    .shell {
+        order: 2;
+    }
+
+    .buttonsProgrammingLanguageChange {
+        order: 3;
+    }
+
+    .navBar {
+        justify-content: space-between;
+    }
+
+    .Logo {
+        order: 2;
+    }
+
+    @keyframes rotiranjeFirst {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(38deg);
+        }
+    }
+
+    @keyframes rotiranjeThird {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(-38deg);
+        }
+    }
+
+    @keyframes transparity {
+        0% {
+            background-color: #D8C4B6;
+        }
+
+        100% {
+            background-color: transparent;
+        }
+    }
+
+
+    @keyframes rotiranjeFirstReverse {
+        0% {
+            transform: rotate(38deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    @keyframes rotiranjeThirdReverse {
+        0% {
+            transform: rotate(-38deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    @keyframes transparityReverse {
+        0% {
+            background-color: transparent;
+        }
+
+        100% {
+            background-color: #D8C4B6;
+        }
+    }
+
+    .HamburgerContainer {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+    }
+
+    .firstLineHam {
+        width: 40px;
+        height: 5px;
+        background-color: #D8C4B6;
+        border-radius: 10px;
+        transform-origin: left center;
+    }
+
+    .secondLineHam {
+        width: 40px;
+        height: 5px;
+        background-color: #D8C4B6;
+        border-radius: 10px;
+    }
+
+    .thirdLineHam {
+        width: 40px;
+        height: 5px;
+        background-color: #D8C4B6;
+        border-radius: 10px;
+        transform-origin: left center;
+    }
+
+    .klikPrva {
+        animation: rotiranjeFirst 0.5s ease-in-out forwards;
+    }
+
+    .klikTreca {
+        animation: rotiranjeThird 0.5s ease-in-out forwards;
+    }
+
+    .transparity {
+        animation: transparity 0.5s ease-in-out forwards;
+    }
+
+    .klikPrvaReverse {
+        animation: rotiranjeFirstReverse 0.5s ease-in-out forwards;
+    }
+
+    .klikTrecaReverse {
+        animation: rotiranjeThirdReverse 0.5s ease-in-out forwards;
+    }
+
+    .transparityReverse {
+        animation: transparityReverse 0.5s ease-in-out forwards;
+    }
+
+    .Logo {
+        margin: 0;
+    }
+
+    .montserrat-h1 {
+        margin: 0;
+    }
+
+    .sidebar {
+        position: fixed;
+        overflow: scroll;
+        width: 0px;
+        height: 100%;
+        box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .jeziciPromjena {
+        display: flex;
+        list-style: none;
+        font-size: 1.2rem;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+
+    .jeziciPromjena li {
+        margin-bottom: 0;
+        margin-right: 5px;
+    }
+
+    .skriveno {
+        opacity: 0;
+        height: 0;
+    }
+
+    @keyframes otkrij {
+        0% {
+            opacity: 0;
+            height: 0;
+        }
+
+        100% {
+            opacity: 1;
+            height: 30px;
+        }
+    }
+
+    @keyframes sakrij {
+        0% {
+            opacity: 1;
+            height: 30px;
+        }
+
+        100% {
+            opacity: 0;
+            height: 0;
+        }
+    }
+
+    #switch {
+        margin-top: 10px;
+        font-size: 1.2rem;
+        overflow: hidden;
+        padding-left: 2rem;
+    }
+
+    .vanjski {
+        width: 50px;
+        height: 20px;
+        border-radius: 1rem;
+        background-color: var(--primary_color);
+        animation: move 1s ease-in-out;
+    }
+
+    .unut {
+        cursor: pointer;
+        position: relative;
+        width: 20px;
+        height: 20px;
+        background-color: #00A8E8;
+        border-radius: 50%;
+    }
+
+    @keyframes m {
+        0% {
+            left: 0%;
+        }
+
+        100% {
+            left: 60%;
+            background-color: #F7CC74;
+        }
+    }
+
+    @keyframes m2 {
+        0% {
+            left: 60%;
+            background-color: #F7CC74;
+        }
+
+        100% {
+            left: 0%;
+        }
+    }
+
+    .unutarnji_klik {
+        animation: m 0.5s ease-in-out forwards;
+    }
+
+    .unatrag_unutarnji_klik {
+        animation: m2 0.5s ease-in-out forwards;
+    }
+
+    .dark_light {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding-left: 2rem;
+        overflow: hidden;
+        font-size: 1.2rem;
+    }
+
+    .leftTOright {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #nemaMargin1,
+    #nemaMargin2,
+    #nemaMargin3,
+    #nemaMargin4,
+    #nemaMargin5 {
+        margin-bottom: 0;
+    }
+
+    .otkriveno {
+        animation: otkrij 1s ease forwards;
+    }
+
+    .sakriveno {
+        animation: sakrij 1s ease forwards;
+    }
+
+    @keyframes opn {
+        0% {
+            opacity: 0;
+            height: 0;
+        }
+
+        100% {
+            opacity: 1;
+            height: 100px;
+        }
+    }
+
+    @keyframes cls {
+        0% {
+            opacity: 1;
+            height: 100px;
+        }
+
+        100% {
+            opacity: 0;
+            height: 0;
+        }
+    }
+
+    .opn {
+        animation: opn 1s ease forwards;
+    }
+
+    .cls {
+        animation: cls 1s ease forwards;
+    }
+
+    @keyframes o {
+        0% {
+            opacity: 0;
+            height: 0;
+        }
+
+        100% {
+            opacity: 1;
+            height: 50px;
+        }
+    }
+
+    @keyframes c {
+        0% {
+            opacity: 1;
+            height: 50px;
+        }
+
+        100% {
+            opacity: 0;
+            height: 0;
+        }
+    }
+
+    .o {
+        animation: o 1s ease forwards;
+    }
+
+    .c {
+        animation: c 1s ease forwards;
+    }
+
+    @keyframes openingSidebar {
+        0% {
+            background-color: #27282225;
+            width: 0px;
+        }
+
+        100% {
+            background-color: #272822;
+            width: 45%;
+        }
+    }
+
+    @keyframes closingSidebar {
+        0% {
+            background-color: #272822;
+            width: 45%;
+        }
+
+        100% {
+            background-color: #272822;
+            width: 0;
+        }
+    }
+
+    .sloziIh {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .shake {
+        width: 30px;
+        height: 30px;
+    }
+
+    .unutarnji {
+        font-size: 2rem;
+        margin-left: 40px;
+    }
+
+    .unutarnji a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .cntme {
+        font-size: 1.5rem;
+        color: #D8C4B6;
+        text-align: center;
+    }
+
+    .black {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #3E5879;
+    }
+
+    .sidebarOpen {
+        animation: openingSidebar 0.7s ease forwards;
+        z-index: 3;
+    }
+
+    .sidebarClose {
+        animation: closingSidebar 1s ease forwards;
+        z-index: 3;
+    }
+
+    .dropdownSettings {
+        display: none;
+    }
+
+    .mojaSlika {
+        display: block;
+    }
+
+    .mojaSlika img {
+        border-radius: 50%;
+    }
+
+    .settings {
+        margin-left: 0;
+    }
+
+    @keyframes flexing {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes flexingreverse {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    .flexingReverse {
+        animation: flexingreverse 0.5s ease forwards;
+    }
+
+    .flexing {
+        animation: flexing 2s ease forwards;
+    }
+
+    @keyframes rotiranjeFirst2 {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(38deg);
+        }
+    }
+
+    @keyframes rotiranjeThird2 {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(-38deg);
+        }
+    }
+
+    @keyframes transparity2 {
+        0% {
+            background-color: #D8C4B6;
+        }
+
+        100% {
+            background-color: transparent;
+        }
+    }
+
+
+    @keyframes rotiranjeFirstReverse2 {
+        0% {
+            transform: rotate(38deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    @keyframes rotiranjeThirdReverse2 {
+        0% {
+            transform: rotate(-38deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    @keyframes transparityReverse2 {
+        0% {
+            background-color: transparent;
+        }
+
+        100% {
+            background-color: #D8C4B6;
+        }
+    }
+
+    .mobileNavigation {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        padding-top: 2rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mobilnaNav {
+        display: flex;
+        flex-direction: column;
+        font-family: "Figtree", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        list-style: none;
+        color: #D8C4B6;
+        font-size: 3rem;
+        margin-top: 0.5rem;
+        margin-left: 9px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: clip;
+    }
+
+    .sidebar {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .mobilnaNav li {
+        margin-bottom: 10px;
+    }
+
+    .HamburgerContainer2 {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+    }
+
+    .firstLineHam2 {
+        width: 40px;
+        height: 5px;
+        background-color: #D8C4B6;
+        border-radius: 10px;
+        transform-origin: left center;
+    }
+
+    .secondLineHam2 {
+        width: 40px;
+        height: 5px;
+        background-color: #D8C4B6;
+        border-radius: 10px;
+    }
+
+    .thirdLineHam2 {
+        width: 40px;
+        height: 5px;
+        background-color: #D8C4B6;
+        border-radius: 10px;
+        transform-origin: left center;
+    }
+
+    .klikPrva2 {
+        animation: rotiranjeFirst2 0.5s ease-in-out forwards;
+    }
+
+    .klikTreca2 {
+        animation: rotiranjeThird2 0.5s ease-in-out forwards;
+    }
+
+    .transparity2 {
+        animation: transparity2 0.5s ease-in-out forwards;
+    }
+
+    .klikPrvaReverse2 {
+        animation: rotiranjeFirstReverse2 0.5s ease-in-out forwards;
+    }
+
+    .klikTrecaReverse2 {
+        animation: rotiranjeThirdReverse2 0.5s ease-in-out forwards;
+    }
+
+    .transparityReverse2 {
+        animation: transparityReverse2 0.5s ease-in-out forwards;
+    }
+
+}
+
+@media only screen and (max-width:673px) {
+    .NikoCrncec {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:720px) {
+    .FeaturesSection {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .FeatureParagraph {
+        width: 17rem;
+        font-size: 0.8rem;
+    }
+
+    .FeatureTitle {
+        font-size: 1.3rem;
+    }
+
+    .svgIcons {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .readMoreText {
+        font-size: 0.9rem;
+    }
+
+    br {
+        display: block;
+        height: 5px;
+    }
+
+    #canvas1 {
+        width: 1000px;
+        height: 1000px;
+        z-index: -1;
+    }
+
+    #canvas {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:426px) {
+    @keyframes openingSidebar {
+        0% {
+            background-color: #27282225;
+            width: 0px;
+        }
+
+        100% {
+            background-color: #272822;
+            width: 100%;
+        }
+    }
+
+    @keyframes closingSidebar {
+        0% {
+            background-color: #272822;
+            width: 100%;
+        }
+
+        100% {
+            background-color: #272822;
+            width: 0;
+        }
+    }
+
+    #canvas {
+        display: none;
+    }
+
+    .NikoCrncec {
+        display: none;
+    }
+
+    #canvas1 {
+        width: 1200px;
+        height: 1200px;
+        top: -200px;
+        left: -150px;
+    }
+
+    .desc {
+        margin-bottom: 5rem;
+    }
+
+    #mojeImeje {
+        width: 19rem;
+    }
+
+    .socialFlex {
+        justify-content: center;
+    }
+
+    #mail a {
+        width: 5.5rem;
+    }
+
+    #javise {
+        margin: 0;
+        margin-top: 1rem;
+    }
+
+    .socialMedia {
+        gap: 0;
+        row-gap: 1rem;
+    }
+
+    .paddingChange {
+        animation: none;
+        padding: 5rem 0;
+    }
+
+    @keyframes goingup {
+        0% {
+            left: -100%;
+        }
+
+        100% {
+            left: 0;
+        }
+    }
+
+    .goUp {
+        position: relative;
+        animation: none;
+        transform: translateY(0vh);
+        animation: goingup 0.5s ease forwards;
+    }
+}
+
+@media only screen and (max-width:633px) {
+    .NikoCrncec {
+        display: none;
+    }
+
+    .montserrat-h1 {
+        font-size: 1.7rem;
+    }
+
+    #javise {
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    .Footer {
+        flex-wrap: wrap;
+    }
+
+    .socialFlex {
+        justify-content: center;
+    }
+
+    .socialMedia {
+        gap: 0;
+        row-gap: 1rem;
+    }
+
+    #mail a {
+        width: 5.5rem;
+    }
+
+    .Objasnjenje h2 {
+        font-size: 1.8rem;
+    }
+
+    .Objasnjenje p {
+        width: 350px;
+        font-size: 1rem;
+    }
+
+    .kopiranje {
+        margin-top: 4px;
+    }
+
+    .kod {
+        font-size: 0.8rem;
+    }
+
+    .normalno {
+        margin-bottom: 0;
+    }
+
+    .lines {
+        font-size: 0.88rem;
+    }
+
+    .kod::-webkit-scrollbar {
+        height: 10px;
+    }
+
+    .shell {
+        height: 27.55rem;
+    }
+
+    .pomeri {
+        margin-top: 0;
+        margin-left: 50px;
+    }
+
+    .code {
+        padding: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .AboutMe {
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    .left {
+        width: 20rem;
+    }
+
+    .textMe {
+        font-size: 0.9rem;
+    }
+
+    .Applications img {
+        width: 23rem;
+        height: 13rem;
+    }
+
+    #opis1,
+    #opis2,
+    #opis3 {
+        width: 23rem;
+    }
+}
+
+@media only screen and (max-width:376px) {
+    #mojeImeje {
+        width: 18rem;
+    }
+
+    .navBar {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .Applications img {
+        width: 20rem;
+        height: 11rem;
+    }
+
+    #opis1,
+    #opis2,
+    #opis3 {
+        width: 20rem;
+    }
+
+    .Objasnjenje {
+        width: 20rem;
+    }
+
+    .Objasnjenje p {
+        width: 20rem;
+    }
+
+    .kod {
+        font-size: 0.7rem;
+    }
+
+    .kod p {
+        margin-top: 1.2px;
+    }
+
+    .lines {
+        font-size: 0.7rem;
+
+    }
+
+    .lines p {
+        margin-bottom: 5.5px;
+    }
+
+    .shell {
+        height: 392px;
+    }
+}
+
+@media only screen and (max-width:335px) {
+    #mojeImeje {
+        width: 15rem;
+        font-size: 0.9rem;
+    }
+
+    .lato-bold-p {
+        font-size: 0.9rem;
+    }
+
+    .montserrat-h1 {
+        font-size: 1.5rem;
+    }
+
+    .Applications img {
+        width: 18rem;
+        height: 10rem;
+    }
+
+    #opis1,
+    #opis2,
+    #opis3 {
+        width: 18rem;
+    }
+
+    .left {
+        width: 18rem;
+    }
+
+    .left h2 {
+        font-size: 2.5rem;
+    }
+
+    .left img {
+        width: 18rem;
+
+    }
+
+    .Objasnjenje {
+        width: 18rem;
+    }
+
+    .Objasnjenje p {
+        width: 18rem;
+    }
+
+    .normalno {
+        font-size: 0.6rem;
+        margin-top: 2px;
+    }
+
+    .copy {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 1537px) and (max-width:2560px) {
+
+    @keyframes expand {
+        0% {
+            height: 0;
+        }
+
+        100% {
+            height: 90px;
+        }
+    }
+
+    @keyframes shrink {
+        0% {
+            height: 90px;
+        }
+
+        100% {
+            height: 0px;
+        }
+    }
+
+    .dropdownSettings.show {
+        animation: expand 1s ease-in-out forwards;
+    }
+
+    .unshow {
+        animation: shrink 1s ease-in-out forwards;
+    }
+
+    .dijete {
+        font-size: 1.8rem;
+    }
+
+    .settingsText {
+        font-size: 1.8rem;
+    }
+
+    .outside {
+        width: 80px;
+        height: 30px;
+    }
+
+    .inside {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    #svgL {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    #svg {
+        width: 2rem;
+        height: 1.7rem;
+    }
+
+    .heroSection {
+        max-width: 2560px;
+        overflow: hidden;
+    }
+
+    .montserrat-h1 {
+        font-size: 5rem;
+    }
+
+    .lato-bold a {
+        font-size: 1.8rem;
+    }
+
+    .desc {
+        padding: 3.5rem;
+        border-radius: 30px;
+        margin: 0;
+        margin-top: 5rem;
+        margin-right: 10rem;
+    }
+
+    .NikoCrncec {
+        justify-self: left;
+        height: 900px;
+        margin-left: 0;
+        margin-top: 7rem;
+    }
+
+    .svg1 {
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+
+    .line {
+        height: 8px;
+    }
+
+    .learnMore {
+        padding: 10px 50px;
+        font-size: 2rem;
+        border-radius: 15px;
+        margin-top: 0.5rem;
+    }
+
+    .montserrat-h2 {
+        font-size: 2.7rem;
+        margin-bottom: 1rem;
+    }
+
+    #mojeImeje {
+        font-size: 2rem;
+        width: 50rem;
+    }
+
+    .lato-bold-p {
+        font-size: 2rem;
+    }
+
+    .navBar {
+        padding-top: 70px;
+        margin: 0rem 5rem;
+    }
+
+    #canvas {
+        width: 1600px;
+        height: 1600px;
+        top: 0rem;
+        left: -25rem;
+    }
+
+    #canvas1 {
+        width: 1600px;
+        height: 1600px;
+        z-index: -1;
+    }
+
+    .FeatureParagraph {
+        width: 41rem;
+        font-size: 1.8rem;
+    }
+
+    .FeatureTitle {
+        font-size: 2.6rem;
+    }
+
+    .svgIcons {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    @keyframes changeofpadding {
+        0% {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        100% {
+            padding-top: 10rem;
+            padding-bottom: 10rem;
+        }
+    }
+
+    .FeaturesSection {
+        gap: 4rem;
+        animation: none;
+    }
+
+    .paddingChange {
+        padding-top: 0;
+        padding-bottom: 0;
+        animation: changeofpadding 0.5s ease forwards;
+    }
+
+    .readMoreText {
+        font-size: 2rem;
+    }
+
+    .ReadMore {
+        width: 20rem;
+    }
+
+    .ReadMore svg {
+        position: relative;
+        width: 4rem;
+        height: 4rem;
+        right: 28px;
+    }
+
+    .stabljika {
+        width: 3rem;
+        height: 0.2rem;
+        margin-left: 1rem;
+    }
+
+    .ReadMore:hover .stabljika {
+        width: 80px;
+    }
+
+    .CenterProjects {
+        width: 100%;
+    }
+
+    .Applications {
+        padding: 4rem;
+    }
+
+    .Applications img {
+        width: 70rem;
+        height: 35rem;
+    }
+
+    #top {
+        margin-top: 8rem;
+    }
+
+    #bottom {
+        margin-bottom: 8rem;
+    }
+
+    .opisProjekti {
+        padding: 5rem;
+    }
+
+    #opis1,
+    #opis2,
+    #opis3 {
+        width: 70rem;
+        font-size: 2rem;
+    }
+
+    .Naslov {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .githubButton p {
+        width: 10rem;
+        font-size: 2rem;
+    }
+
+    .githubButton svg {
+        width: 3rem;
+        height: 3rem;
+        align-self: center;
+    }
+
+    .githubButton {
+        padding: 0.7rem 2rem;
+        border: 3px solid #F5EFE7;
+        border-radius: 20px;
+    }
+
+    .Opisaplikacije {
+        margin-bottom: 2rem;
+    }
+
+    .More {
+        width: 11rem;
+        height: 4.8rem;
+        font-size: 2rem;
+        padding: 0.5rem 2rem;
+        border-radius: 20px;
+    }
+
+    .AboutMe img {
+        width: 40rem;
+        height: 50rem;
+    }
+
+    .textMe {
+        width: 60rem;
+        font-size: 2rem;
+    }
+
+    .left {
+        width: 60rem;
+    }
+
+    .left h2 {
+        font-size: 5rem;
+    }
+
+    #abtm {
+        margin-bottom: 8px;
+        font-size: 1.5rem;
+    }
+
+    .crticeAboutMe svg {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .navBar ul {
+        gap: 6rem;
+    }
+
+    .shell {
+        width: 55rem;
+        height: 40rem;
+    }
+
+    .programmingCode {
+        font-size: 1.4rem;
+        height: 100%;
+    }
+
+    .kod::-webkit-scrollbar {
+        height: 20px;
+    }
+
+    .Objasnjenje p {
+        width: 50rem;
+        font-size: 2rem;
+    }
+
+    .Objasnjenje h2 {
+        font-size: 4.5rem;
+    }
+
+    .buttonsProgrammingLanguageChange>button {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 30px;
+    }
+
+    .buttonsProgrammingLanguageChange>button>svg {
+        border-radius: 15px;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .topping {
+        height: 60px;
+    }
+
+    .kod p {
+        height: 30px;
+    }
+
+    .slozi {
+        margin-left: 20px;
+        font-size: 1.3rem;
+    }
+
+    .copy {
+        font-size: 1.3rem;
+    }
+
+    .kopiranje {
+        gap: 1rem;
+        margin-right: 1rem;
+    }
+
+    .kopiranje svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .Footer {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        font-size: 1.3rem;
+        gap: 10rem;
+    }
+
+    .socialFlex a {
+        font-size: 1.3rem;
+    }
+
+    .info {
+        width: 30rem;
+    }
+
+    .yup {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .shake {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    #mail a {
+        width: 20rem;
+    }
+
+    .socialMedia {
+        width: 40rem;
+    }
+
+    .websites {
+        gap: 2.5rem;
+    }
+}
+
+@media only screen and (min-width:2560px) {
+    .heroSection {
+        max-width: 2560px;
+    }
+
+    .heroSection {
+        max-width: 2560px;
+        overflow: hidden;
+    }
+
+    .montserrat-h1 {
+        font-size: 5rem;
+    }
+
+    .lato-bold a {
+        font-size: 1.8rem;
+    }
+
+    .desc {
+        padding: 3.5rem;
+        border-radius: 30px;
+        margin: 0;
+        margin-top: 5rem;
+        margin-right: 10rem;
+    }
+
+    .NikoCrncec {
+        justify-self: left;
+        height: 900px;
+        margin-left: 0;
+        margin-top: 7rem;
+    }
+
+    .svg1 {
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+
+    .line {
+        height: 8px;
+    }
+
+    .learnMore {
+        padding: 10px 50px;
+        font-size: 2rem;
+        border-radius: 15px;
+        margin-top: 0.5rem;
+    }
+
+    .montserrat-h2 {
+        font-size: 2.7rem;
+        margin-bottom: 1rem;
+    }
+
+    #mojeImeje {
+        font-size: 2rem;
+        width: 50rem;
+    }
+
+    .lato-bold-p {
+        font-size: 2rem;
+    }
+
+    .navBar {
+        padding-top: 70px;
+        margin: 0rem 5rem;
+    }
+
+    #canvas {
+        width: 1600px;
+        height: 1600px;
+        top: 0rem;
+        left: -25rem;
+    }
+
+    #canvas1 {
+        width: 1600px;
+        height: 1600px;
+        z-index: -1;
+    }
+
+    .FeatureParagraph {
+        width: 41rem;
+        font-size: 1.8rem;
+    }
+
+    .FeatureTitle {
+        font-size: 2.6rem;
+    }
+
+    .svgIcons {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    @keyframes changeofpadding {
+        0% {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        100% {
+            padding-top: 10rem;
+            padding-bottom: 10rem;
+        }
+    }
+
+    .FeaturesSection {
+        gap: 4rem;
+        animation: none;
+    }
+
+    .paddingChange {
+        padding-top: 0;
+        padding-bottom: 0;
+        animation: changeofpadding 0.5s ease forwards;
+    }
+
+    .readMoreText {
+        font-size: 2rem;
+    }
+
+    .ReadMore {
+        width: 20rem;
+    }
+
+    .ReadMore svg {
+        position: relative;
+        width: 4rem;
+        height: 4rem;
+        right: 28px;
+    }
+
+    .stabljika {
+        width: 3rem;
+        height: 0.2rem;
+        margin-left: 1rem;
+    }
+
+    .ReadMore:hover .stabljika {
+        width: 80px;
+    }
+
+    .CenterProjects {
+        width: 100%;
+    }
+
+    .Applications {
+        padding: 4rem;
+    }
+
+    .Applications img {
+        width: 70rem;
+        height: 35rem;
+    }
+
+    #top {
+        margin-top: 8rem;
+    }
+
+    #bottom {
+        margin-bottom: 8rem;
+    }
+
+    .opisProjekti {
+        padding: 5rem;
+    }
+
+    #opis1,
+    #opis2,
+    #opis3 {
+        width: 70rem;
+        font-size: 2rem;
+    }
+
+    .Naslov {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .githubButton p {
+        width: 10rem;
+        font-size: 2rem;
+    }
+
+    .githubButton svg {
+        width: 3rem;
+        height: 3rem;
+        align-self: center;
+    }
+
+    .githubButton {
+        padding: 0.7rem 2rem;
+        border: 3px solid #F5EFE7;
+        border-radius: 20px;
+    }
+
+    .Opisaplikacije {
+        margin-bottom: 2rem;
+    }
+
+    .More {
+        width: 11rem;
+        height: 4.8rem;
+        font-size: 2rem;
+        padding: 0.5rem 2rem;
+        border-radius: 20px;
+    }
+
+    .AboutMe img {
+        width: 40rem;
+        height: 50rem;
+    }
+
+    .textMe {
+        width: 60rem;
+        font-size: 2rem;
+    }
+
+    .left {
+        width: 60rem;
+    }
+
+    .left h2 {
+        font-size: 5rem;
+    }
+
+    #abtm {
+        margin-bottom: 8px;
+        font-size: 1.5rem;
+    }
+
+    .crticeAboutMe svg {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .navBar ul {
+        gap: 6rem;
+    }
+
+    .shell {
+        width: 55rem;
+        height: 40rem;
+    }
+
+    .programmingCode {
+        font-size: 1.4rem;
+        height: 100%;
+    }
+
+    .kod::-webkit-scrollbar {
+        height: 20px;
+    }
+
+    .Objasnjenje p {
+        width: 50rem;
+        font-size: 2rem;
+    }
+
+    .Objasnjenje h2 {
+        font-size: 4.5rem;
+    }
+
+    .buttonsProgrammingLanguageChange>button {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 30px;
+    }
+
+    .buttonsProgrammingLanguageChange>button>svg {
+        border-radius: 15px;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .topping {
+        height: 60px;
+    }
+
+    .kod p {
+        height: 30px;
+    }
+
+    .slozi {
+        margin-left: 20px;
+        font-size: 1.3rem;
+    }
+
+    .copy {
+        font-size: 1.3rem;
+    }
+
+    .kopiranje {
+        gap: 1rem;
+        margin-right: 1rem;
+    }
+
+    .kopiranje svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .Footer {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        font-size: 1.3rem;
+        gap: 10rem;
+    }
+
+    .socialFlex a {
+        font-size: 1.3rem;
+    }
+
+    .info {
+        width: 30rem;
+    }
+
+    .yup {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .shake {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    #mail a {
+        width: 20rem;
+    }
+
+    .socialMedia {
+        width: 40rem;
+    }
+
+    .websites {
+        gap: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 1537px) and (max-width:2390px) {
+
+
+    .Applications img {
+        width: 50rem;
+        height: 30rem;
+    }
+
+    #opis1,
+    #opis2,
+    #opis3 {
+        font-size: 1.8rem;
+    }
+
+    .Naslov {
+        font-size: 2.8rem;
+    }
+
+    .FeatureParagraph {
+        font-size: 1.7rem;
+    }
+}
+
+@media only screen and (min-width: 1537px) and (max-width:2172px) {
+    .pID {
+        font-size: 1.3rem;
+    }
+
+    .settingsText {
+        font-size: 1.3rem;
+    }
+
+    .dijete {
+        font-size: 1.3rem;
+    }
+
+    @keyframes expand {
+        0% {
+            height: 0;
+        }
+
+        100% {
+            height: 90px;
+        }
+    }
+
+    @keyframes shrink {
+        0% {
+            height: 90px;
+        }
+
+        100% {
+            height: 0px;
+        }
+    }
+
+    .dropdownSettings.show {
+        animation: expand 1s ease-in-out forwards;
+    }
+
+    .unshow {
+        animation: shrink 1s ease-in-out forwards;
+    }
+
+    .dijete {
+        font-size: 1.8rem;
+    }
+
+    .outside {
+        width: 80px;
+        height: 30px;
+    }
+
+    .inside {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    #svgL {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    #svg {
+        width: 2rem;
+        height: 1.7rem;
+    }
+
+    #canvas1 {
+        width: 1400px;
+        height: 1400px;
+    }
+
+    #canvas {
+        top: 3rem;
+        width: 1400px;
+        height: 1400px;
+    }
+
+    .links ul {
+        font-size: 1rem;
+        gap: 4rem;
+    }
+
+    .FeatureParagraph {
+        width: 28rem;
+        font-size: 1.2rem;
+    }
+
+    .svgIcons {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .FeatureTitle {
+        font-size: 2rem;
+    }
+
+    .readMoreText {
+        font-size: 1.3rem;
+    }
+
+    .Applications img {
+        width: 45rem;
+        height: 25rem;
+    }
+
+    #opis1,
+    #opis2,
+    #opis3 {
+        width: 60rem;
+        font-size: 1.5rem;
+    }
+
+    .Naslov {
+        font-size: 2rem;
+    }
+
+    .opisProjekti {
+        padding: 40px;
+    }
+
+    .shell {
+        width: 48rem;
+    }
+
+    .Objasnjenje p {
+        width: 38rem;
+        font-size: 1.8rem;
+    }
+
+    .Objasnjenje h2 {
+        font-size: 3rem;
+    }
+
+    .textMe {
+        font-size: 1.8rem;
+        width: 45rem;
+    }
+
+    .left {
+        width: 45rem;
+    }
+
+    .NikoCrncec {
+        height: 700px;
+    }
+
+    .ReadMore svg {
+        left: -1.1rem;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .stabljika {
+        width: 2rem;
+    }
+
+    .ReadMore:hover .stabljika {
+        width: 4rem;
+    }
+
+    .githubButton {
+        padding: 0.4rem 1.4rem;
+        border-radius: 15px;
+    }
+
+    .githubButton p {
+        align-self: center;
+        font-size: 1.7rem;
+    }
+
+    .githubButton svg {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .More {
+        width: 9rem;
+        height: 4.2rem;
+        border-radius: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #lm {
+        font-size: 1.7rem;
+    }
+
+    .montserrat-h1 {
+        font-size: 3.7rem;
+    }
+
+    .NikoCrncec {
+        margin-top: 70px;
+    }
+
+    #pj,
+    #aboutme,
+    #home {
+        font-size: 1.3rem;
+    }
+
+    .desc {
+        padding: 3rem;
+    }
+
+    #mojeImeje {
+        width: 45rem;
+        font-size: 1.9rem;
+    }
+
+    .lato-bold-p {
+        font-size: 1.9rem;
+    }
+
+    .montserrat-h2 {
+        font-size: 2.4rem;
+    }
+
+    .learnMore {
+        align-self: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+        border-radius: 12px;
+    }
+
+    .svg1 {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+    .desc {
+        margin-right: 7rem;
+    }
+
+    @keyframes gayTransition {
+        0% {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        100% {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+    }
+
+    .paddingChange {
+        margin-top: 0;
+        margin-bottom: 0;
+        animation: gayTransition 0.5s ease forwards;
+    }
+
+    .navBar {
+        padding-top: 50px;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    .FeaturesSection {
+        gap: 7rem;
+    }
+}
+
+@media only screen and (min-width: 1537px) and (max-width: 1792px) {
+    .shell {
+        width: 40rem;
+    }
+
+    .Objasnjenje p {
+        font-size: 1.7rem;
+    }
+
+    #opis1,
+    #opis2,
+    #opis3 {
+        font-size: 1.3rem;
+        width: 46rem;
+    }
+
+    #top {
+        margin-top: 20px;
+    }
+
+    #bottom {
+        margin-bottom: 20px;
+    }
+
+    .Naslov {
+        margin-bottom: 15px;
+    }
+
+
+
+    #canvas {
+        top: 100px;
+        left: -260px;
+        width: 1000px;
+        height: 1000px;
+    }
+
+    #canvas1 {
+        top: -200px;
+        right: -330px;
+        width: 1000px;
+        height: 1000px;
+    }
+
+    .Objasnjenje {
+        padding: 10px;
+    }
+
+    .code {
+        padding: 2.5rem;
+    }
+
+    .textMe {
+        width: 35rem;
+        font-size: 1.5rem;
+    }
+
+    .left h2 {
+        font-size: 4rem;
+    }
+
+    .left {
+        width: 35rem;
+    }
+
+    .AboutMe {
+        gap: 8rem;
+    }
+
+    .desc {
+        padding: 3rem;
+    }
+
+    #mojeImeje {
+        width: 38rem;
+        font-size: 1.6rem;
+    }
+
+    .lato-bold-p {
+        font-size: 1.6rem;
+    }
+
+    .montserrat-h2 {
+        font-size: 2.4rem;
+    }
+
+    .learnMore {
+        align-self: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 0.4rem;
+        border-radius: 12px;
+    }
+
+    .learnMore span {
+        font-size: 1.7rem;
+
+    }
+
+    .montserrat-h1 {
+        font-size: 3.7rem;
+    }
+
+    .NikoCrncec {
+        margin-top: 70px;
+    }
+
+    #pj,
+    #aboutme,
+    #home {
+        font-size: 1.3rem;
+    }
+
+    @keyframes gayTransition {
+        0% {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        100% {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+    }
+
+    .paddingChange {
+        margin-top: 0;
+        margin-bottom: 0;
+        animation: gayTransition 0.5s ease forwards;
+    }
+
+    .code {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .NikoCrncec {
+        height: 600px;
+    }
+
+    .desc {
+        margin-top: 40px;
+    }
+
+    .Footer {
+        gap: 6rem;
+    }
+
+    .More span {
+        font-size: 1.7rem;
+    }
+}
